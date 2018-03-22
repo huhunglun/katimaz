@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="Bootstrap, Parallax, Template, Registration, Landing">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="Grayrids">
+    <meta name="author" content="Katimaz">
     <title>Katimaz - Technology is the future</title>
 
     <!-- Bootstrap CSS -->
