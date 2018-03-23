@@ -13,7 +13,7 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        //
+        return view('portfolio');
     }
 
     /**
@@ -21,9 +21,10 @@ class PortfolioController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $file = $request->file('img');
+        dd($file);
     }
 
     /**
@@ -34,7 +35,7 @@ class PortfolioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**

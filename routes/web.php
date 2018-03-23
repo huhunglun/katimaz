@@ -19,4 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/portfolio', 'HomeController@index')->name('home');
+Route::get('/portfolio', 'PortfolioController@index')->name('portfolio');
+Route::post('/portfolio', 'PortfolioController@create')->name('portfolio');
