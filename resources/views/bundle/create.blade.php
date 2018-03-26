@@ -5,10 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card">
-                <div class="card-header">{{ __('Portfolio') }}</div>
+                <div class="card-header">{{__('label.bundle')}}</div>
 
                 <div class="card-body">
-                    <form method="POST" enctype="multipart/form-data" action="{{ route('portfolio') }}">
+                    <form method="POST" enctype="multipart/form-data" action="{{ route('admin.bundle.add') }}">
                         @csrf
 
                         <div class="form-group row">
@@ -40,14 +40,14 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('label.url') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('label.price') }}</label>
 
                             <div class="col-md-6">
-                                <input id="url" type="text" class="form-control{{ $errors->has('url') ? ' is-invalid' : '' }}" name="url" required>
+                                <input id="price" type="text" class="form-control{{ $errors->has('price') ? ' is-invalid' : '' }}" name="price" required>
 
-                                @if ($errors->has('url'))
+                                @if ($errors->has('price'))
                                     <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('url') }}</strong>
+                                        <strong>{{ $errors->first('price') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -58,26 +58,13 @@
 
                             <div class="col-md-6">
                                 <select id="type" type="text" class="form-control{{ $errors->has('type') ? ' is-invalid' : '' }}" name="type" required>
-                                    <option value="1">{{ __('label.design') }}</option>
-                                    <option value="2">{{ __('label.development') }}</option>
-                                    <option value="3">{{ __('label.website') }}</option>
-
+                                    @foreach($types as $type)
+                                        <option value="{{$type->id}}">{{$type->name}}</option>
+                                    @endforeach
                                 </select>
                                 @if ($errors->has('type'))
                                     <span class="invalid-feedback">
                                         <strong>{{ $errors->first('type') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="img" class="col-md-4 col-form-label text-md-right">{{ __('label.img') }}</label>
-                            <div class="col-md-6">
-                                <input type="file" class="form-control{{ $errors->has('img') ? ' is-invalid' : '' }}" name="img" id="img">
-                                @if ($errors->has('img'))
-                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('img') }}</strong>
                                     </span>
                                 @endif
                             </div>

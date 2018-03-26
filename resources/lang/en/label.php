@@ -11,4 +11,9 @@ return [
     'development' => 'Development',
     'website' => 'Website',
     'design' => 'Design',
+    'type' =>'Type',
+    'operation' =>'Operation',
+    'portfolio' =>'Portfolio',
+    'price' =>'Price',
+    'bundle' =>'Bundle',
 ];

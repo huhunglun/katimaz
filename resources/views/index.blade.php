@@ -33,7 +33,7 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a href="index.html" class="navbar-brand"><img class="img-fulid" src="img/logo.png" alt=""></a>
+                <a href="{{url('/')}}" class="navbar-brand"><img class="img-fulid" src="img/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="lnr lnr-menu"></i>
                 </button>
@@ -231,104 +231,40 @@
                     <a class="filter active btn btn-common" data-filter="all">
                         All
                     </a>
-                    <a class="filter btn btn-common" data-filter=".design">
-                        Design
-                    </a>
-                    <a class="filter btn btn-common" data-filter=".development">
-                        Development
-                    </a>
-                    <a class="filter btn btn-common" data-filter=".print">
-                        Print
-                    </a>
+                    @foreach($portfolioTypes as $portfolioType)
+                    <a class="filter btn btn-common" data-filter=".{{$portfolioType->name}}">{{$portfolioType->name}}</a>
+                    @endforeach
                 </div>
                 <!-- Portfolio Controller/Buttons Ends-->
             </div>
 
             <!-- Portfolio Recent Projects -->
             <div id="portfolio" class="row">
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
-                    <div class="portfolio-item">
-                        <div class="shot-item overlay">
-                            <a data-fancybox="gallery" data-toolbar="false" data-small-btn="true" data-caption="This image has a caption<a href='http://www.google.com'>12321</a>" href="img/portfolio/img1.jpg" >
-                                <img src="img/portfolio/img1.jpg" alt="" />
-                                <i class="lnr lnr-eye item-icon"></i>
-                            </a>
-                            <a data-fancybox="gallery" data-toolbar="false" data-small-btn="true" data-caption="This image has a caption<a href='http://www.google.com'>1aaa2321</a>" href="img/portfolio/img2.jpg" ></a>
+                @foreach($portfolios as $portfolio)
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix {{$portfolio->name}}">
+                        <div class="portfolio-item">
+                            <div class="shot-item overlay">
+                                <a data-fancybox="{{$portfolio->title}}" data-toolbar="false" data-small-btn="true"
+                                   data-caption="<p style='font-size:24px'><a href='{{$portfolio->url}}' target='_blank'><strong>{{$portfolio->title}}</strong></a></p>{{$portfolio->description}}"
+                                   href="{{$portfolio->img}}" >
+                                    <img src="{{$portfolio->img}}" alt="" />
+                                    <i class="lnr lnr-eye item-icon"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
-                    <div class="portfolio-item">
-                        <div class="shot-item overlay">
-                            <a data-fancybox data-toolbar="false" data-small-btn="true"
-                               data-caption="<p>This image has a caption<a href='http://www.google.com'>123gfdgfd21</a></p><p>dasjkdkljsa akldjasklj akdljalksjdakjsdlksaj</p>"
-                               href="img/portfolio/img1.jpg" >
-                                <img src="img/portfolio/img1.jpg" alt="" />
-                                <i class="lnr lnr-eye item-icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
-                    <div class="portfolio-item">
-                        <div class="shot-item">
-                            <img src="img/portfolio/img1.jpg" alt="" />
-                            <a class="overlay lightbox" href="img/portfolio/img1.jpg">
-                                <i class="lnr lnr-eye item-icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design print">
-                    <div class="portfolio-item">
-                        <div class="shot-item">
-                            <img src="img/portfolio/img2.jpg" alt="" />
-                            <a class="overlay lightbox" href="img/portfolio/img2.jpg">
-                                <i class="lnr lnr-eye item-icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
-                    <div class="portfolio-item">
-                        <div class="shot-item">
-                            <img src="img/portfolio/img3.jpg" alt="" />
-                            <a class="overlay lightbox" href="img/portfolio/img3.jpg">
-                                <i class="lnr lnr-eye item-icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development design">
-                    <div class="portfolio-item">
-                        <div class="shot-item">
-                            <img src="img/portfolio/img4.jpg" alt="" />
-                            <a class="overlay lightbox" href="img/portfolio/img4.jpg">
-                                <i class="lnr lnr-eye item-icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
-                    <div class="portfolio-item">
-                        <div class="shot-item">
-                            <img src="img/portfolio/img5.jpg" alt="" />
-                            <a class="overlay lightbox" href="img/portfolio/img5.jpg">
-                                <i class="lnr lnr-eye item-icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix print design">
-                    <div class="portfolio-item">
-                        <div class="shot-item">
-                            <img src="img/portfolio/img6.jpg" alt="" />
-                            <a class="overlay lightbox" href="img/portfolio/img6.jpg">
-                                <i class="lnr lnr-eye item-icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
+                {{--<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">--}}
+                    {{--<div class="portfolio-item">--}}
+                        {{--<div class="shot-item overlay">--}}
+                            {{--<a data-fancybox="gallery" data-toolbar="false" data-small-btn="true" data-caption="This image has a caption<a href='http://www.google.com'>12321</a>" href="img/portfolio/img1.jpg" >--}}
+                                {{--<img src="img/portfolio/img1.jpg" alt="" />--}}
+                                {{--<i class="lnr lnr-eye item-icon"></i>--}}
+                            {{--</a>--}}
+                            {{--<a data-fancybox="gallery" data-toolbar="false" data-small-btn="true" data-caption="This image has a caption<a href='http://www.google.com'>1aaa2321</a>" href="img/portfolio/img2.jpg" ></a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
             </div>
         </div>
     </div>

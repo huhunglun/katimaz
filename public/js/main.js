@@ -172,7 +172,9 @@
   /*---------------------------------------------*
      * For Price Table
      ---------------------------------------------*/
-	$("#price_table").flip();
+	$("#price_table").flip({
+        trigger: 'manual'
+    });
 	$('input[type=radio][name=price]').change(function() {
 		$("#price_table").flip('toggle');
     });
