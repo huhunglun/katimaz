@@ -26,7 +26,7 @@ class PortfolioController extends Controller
             ->join('portfolio_types', 'portfolios.type_id', '=', 'portfolio_types.id')
             ->get();
 
-        return view('admin1.portfolio.index',compact('portfolios'));
+        return view('admin.portfolio.index',compact('portfolios'));
     }
 
     /**
