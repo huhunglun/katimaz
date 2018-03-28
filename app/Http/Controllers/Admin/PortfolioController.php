@@ -26,7 +26,7 @@ class PortfolioController extends Controller
             ->join('portfolio_types', 'portfolios.type_id', '=', 'portfolio_types.id')
             ->get();
 
-        return view('portfolio.index',compact('portfolios'));
+        return view('admin1.portfolio.index',compact('portfolios'));
     }
 
     /**
@@ -37,7 +37,7 @@ class PortfolioController extends Controller
     public function create(Request $request)
     {
         $types = PortfolioType::all();
-        return view('portfolio.create',compact('types'));
+        return view('admin.portfolio.create',compact('types'));
     }
 
     public function add(Request $request)

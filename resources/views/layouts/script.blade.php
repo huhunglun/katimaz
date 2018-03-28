@@ -1,0 +1,26 @@
+<!-- Scripts -->
+<script src="{{ asset('js/app.js') }}" defer></script>
+<script src="js/jquery-min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mixitup.js"></script>
+<script src="js/jquery.mixitup.pagination.min.js"></script>
+<script src="js/nivo-lightbox.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/scrolling-nav.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/jquery.vide.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<!--<script src="js/form-validator.min.js"></script>
+<script src="js/contact-form-script.js"></script>   -->
+<script src="js/modernizr.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.js"></script>
+<script src="js/main.js"></script>
