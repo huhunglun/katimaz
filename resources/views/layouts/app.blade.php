@@ -13,15 +13,13 @@
 
     <title>{{ config('app.name', 'Katimaz') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
     @include('layouts.style')
 </head>
 <body>
     @include('layouts.header')
     @yield('content')
     @include('layouts.footer')
-    @include('layouts.script')
+
     <!-- Go To Top Link -->
     <a href="#" class="back-to-top">
         <i class="lnr lnr-arrow-up"></i>
@@ -33,5 +31,6 @@
             <div class="double-bounce2"></div>
         </div>
     </div>
+    @include('layouts.script')
 </body>
 </html>

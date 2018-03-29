@@ -1,5 +1,4 @@
-<!-- Scripts -->
-<script src="{{ asset('js/app.js') }}" defer></script>
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="js/jquery-min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

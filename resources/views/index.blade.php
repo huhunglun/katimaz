@@ -50,51 +50,64 @@
             <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
         </div>
         <div class="row">
-            <div class="col-lg-8 col-md-12 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-xs-12">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-                    <span class="icon">
-                      <i class="lnr lnr-rocket"></i>
-                    </span>
+                        <div class="col-lg-4 col-sm-4 col-xs-12 box-item">
+                            <span class="icon">
+                              <i class="lnr lnr-rocket"></i>
+                            </span>
                             <div class="text">
                                 <h4>Bootstrap 4 Based</h4>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-                    <span class="icon">
-                      <i class="lnr lnr-laptop-phone"></i>
-                    </span>
+                        <div class="col-lg-4 col-sm-4 col-xs-12 box-item">
+                            <span class="icon">
+                              <i class="lnr lnr-laptop-phone"></i>
+                            </span>
                             <div class="text">
                                 <h4>Fully Responsive</h4>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-                    <span class="icon">
-                      <i class="lnr lnr-layers"></i>
-                    </span>
+                        <div class="col-lg-4 col-sm-4 col-xs-12 box-item">
+                            <span class="icon">
+                              <i class="lnr lnr-layers"></i>
+                            </span>
                             <div class="text">
                                 <h4>Parallax Background</h4>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-                    <span class="icon">
-                      <i class="lnr lnr-cog"></i>
-                    </span>
+                        <div class="col-lg-4 col-sm-4 col-xs-12 box-item">
+                            <span class="icon">
+                              <i class="lnr lnr-cog"></i>
+                            </span>
                             <div class="text">
                                 <h4>Easy to Customize</h4>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                             </div>
+                        </div><div class="col-lg-4 col-sm-4 col-xs-12 box-item">
+                            <span class="icon">
+                              <i class="lnr lnr-layers"></i>
+                            </span>
+                            <div class="text">
+                                <h4>Parallax Background</h4>
+                                <p>Lorem Ipsum is simply d1ummy text of the printing and typesetting industry</p>
+                            </div>
                         </div>
+                        <div class="col-lg-4 col-sm-4 col-xs-12 box-item">
+                            <span class="icon">
+                              <i class="lnr lnr-cog"></i>
+                            </span>
+                            <div class="text">
+                                <h4>Easy to Customize</h4>
+                                <p>Lorem Ipsum is simply du2mmy text of the printing and typesetting industry</p>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-xs-12">
-                <div class="show-box">
-                    <img class="img-fulid" src="img/features/feature.png" alt="">
                 </div>
             </div>
         </div>
