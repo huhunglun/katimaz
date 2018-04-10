@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <!-- Services Section Start -->
+{{ Html::style('public/css/bootstrap.min.css') }}
 <section id="services" class="section">
     <div class="container">
         <div class="section-header">
@@ -205,8 +206,6 @@
                 <label for="monthly">Business</label>
                 <input type="radio" name="price" value="yearly" id="yearly">
                 <label for="yearly">Community</label>
-                <input type="radio" name="price" value="hourly" id="hourly">
-                <label for="hourly">Community</label>
                 <span class="cd-switch"></span>
             </p>
         </div> <!-- .cd-pricing-switcher -->
